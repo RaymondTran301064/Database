@@ -13,15 +13,19 @@ DEFINE("PARTIALS",VIEWS."partials/");
 /* set the path to the Model classes folder */
 DEFINE("MODELS",LIB."models");
 
-/* Path to the Mouse application i.e. the Mouse Framework */
+/* Define Applications *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* */
 DEFINE("MOUSE",LIB."mouse.php");
+DEFINE("APP",LIB."app.php");
 
-/* Define a default layout */
+
+/* Define layout *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
 DEFINE("LAYOUT","standard");
 
 /* Start the Mouse application */
 require MOUSE;
+require APP;
 
+/*Get Functions *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
 get("/",function($app){
    $app->force_to_http("/");
    $app->set_message("title","Home");
@@ -179,6 +183,7 @@ get("/signout",function($app){
    }
 });
 
+/*POST Functions *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
 
 post("/signup",function($app){
 
@@ -238,6 +243,8 @@ post("/signin",function($app){
   $app->set_flash("Lovely, you are now signed in!");
   $app->redirect_to("/");
 });
+
+/*Delete Functions *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
 
 delete("/members/:id",function($app){ 
   $id = $app->route_var('id');

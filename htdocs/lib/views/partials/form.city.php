@@ -1,2 +1,2 @@
-<label for='city'>City</label>
-<input type='text' id='city' name='city' />
+ <label for='city'>City</label>
+ <input type='text' id='city' name='city' autofocus/>

@@ -1,2 +1,4 @@
-<label for='fname'>First Name</label>
-<input type='text' id='fname' name='fname' />
+ <label for='fname'>Name</label>
+ <input type='text' id='fname' name='fname' autofocus/>
+
+

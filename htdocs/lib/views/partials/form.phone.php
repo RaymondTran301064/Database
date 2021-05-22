@@ -1,2 +1,2 @@
-<label for='phone'>Phone Number</label>
-<input type='number' id='phone' name='phone' />
+ <label for='phone'>Phone Number</label>
+ <input type='number' id='number' name='phone' autofocus/>

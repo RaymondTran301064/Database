@@ -29,3 +29,13 @@
 [Fri May 14 19:13:13.647931 2021] [ssl:warn] [pid 2480:tid 592] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
 [Fri May 14 19:13:13.669417 2021] [mpm_winnt:notice] [pid 2480:tid 592] AH00354: Child: Starting 150 worker threads.
 [Fri May 14 19:13:20.299289 2021] [php7:error] [pid 2480:tid 1832] [client 127.0.0.1:62044] PHP Fatal error:  Uncaught Exception: Something wrong with the database: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.\r\n in C:\\xampp\\htdocs\\lib\\model.php:185\nStack trace:\n#0 C:\\xampp\\htdocs\\index.php(66): get_user_name()\n#1 C:\\xampp\\htdocs\\lib\\application.php(51): {closure}(Object(Application))\n#2 C:\\xampp\\htdocs\\lib\\application.php(4): Application::register('/', Object(Closure), 'GET')\n#3 C:\\xampp\\htdocs\\index.php(69): get('/', Object(Closure))\n#4 {main}\n  thrown in C:\\xampp\\htdocs\\lib\\model.php on line 185
+[Sat May 22 09:53:09.604348 2021] [ssl:warn] [pid 15064:tid 568] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sat May 22 09:53:09.636073 2021] [core:warn] [pid 15064:tid 568] AH00098: pid file C:/xampp/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sat May 22 09:53:09.638027 2021] [ssl:warn] [pid 15064:tid 568] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sat May 22 09:53:09.660072 2021] [mpm_winnt:notice] [pid 15064:tid 568] AH00455: Apache/2.4.47 (Win64) OpenSSL/1.1.1k PHP/7.3.28 configured -- resuming normal operations
+[Sat May 22 09:53:09.660072 2021] [mpm_winnt:notice] [pid 15064:tid 568] AH00456: Apache Lounge VC15 Server built: Apr 27 2021 10:59:41
+[Sat May 22 09:53:09.660072 2021] [core:notice] [pid 15064:tid 568] AH00094: Command line: 'c:\\xampp\\apache\\bin\\httpd.exe -d C:/xampp/apache'
+[Sat May 22 09:53:09.663467 2021] [mpm_winnt:notice] [pid 15064:tid 568] AH00418: Parent: Created child process 12100
+[Sat May 22 09:53:10.034044 2021] [ssl:warn] [pid 12100:tid 564] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sat May 22 09:53:10.063818 2021] [ssl:warn] [pid 12100:tid 564] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sat May 22 09:53:10.086357 2021] [mpm_winnt:notice] [pid 12100:tid 564] AH00354: Child: Starting 150 worker threads.
