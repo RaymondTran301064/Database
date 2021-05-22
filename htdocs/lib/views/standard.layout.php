@@ -13,7 +13,6 @@
 <?php
   if(!isset($super_user) && !$super_user){
      echo "<li><a href='/'>Home</a></li>";
-	 echo "<li><a href='/art'>Art Peices</a></li>";
      if(isset($authenticated) && $authenticated){
         echo "<li><a href='/members'>Members</a></li>";
         echo "<li><a href='/signout'>Sign out</a></li>";
